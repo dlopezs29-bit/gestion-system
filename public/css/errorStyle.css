@@ -1,0 +1,39 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.text-accent {
+  color: #6c0c1a;
+}
+
+.text-primary {
+  color: #082347 !important;
+}
+
+.btn-accent {
+  background-color: #6c0c1a;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn-accent:hover {
+  background-color: #500914;
+}
+
+.error-box {
+  max-width: 500px;
+  border-top: 8px solid #082347;
+  border-bottom: 8px solid #6c0c1a;
+  background-color: #fff;
+}
+
+footer {
+  color: #666;
+}
+
+/* Sombra sutil */
+.shadow-lg {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}

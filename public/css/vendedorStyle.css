@@ -1,0 +1,174 @@
+/* ===== ESTILOS BASE ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #082347;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-accent {
+  color: #6c0c1a;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+.main-content {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-left: 240px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* ===== BOTÓN DE MENÚ (hamburguesa) ===== */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #6c0c1a;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* ===== BOTONES PERSONALIZADOS ===== */
+.btn-accent {
+  background-color: #6c0c1a;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-accent:hover {
+  background-color: #500914;
+}
+
+/* ===== TABLAS ===== */
+.table-header {
+  background-color: #082347;
+  color: #fff;
+}
+
+.card,
+form {
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== SCROLLBAR ESTILIZADA ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c0c1a;
+  border-radius: 10px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Dispositivos medianos (tablets) */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Dispositivos pequeños (teléfonos grandes como iPhone Pro Max) */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .btn-accent {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Dispositivos muy pequeños */
+@media (max-width: 400px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .nav-link {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .menu-toggle {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+}

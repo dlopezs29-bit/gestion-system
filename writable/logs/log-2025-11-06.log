@@ -1,0 +1,145 @@
+CRITICAL - 2025-11-06 00:10:49 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: duenia]
+in APPPATH\Views\duenia.php on line 102.
+ 1 APPPATH\Views\duenia.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('duenia', [], true)
+ 5 APPPATH\Controllers\DuenaController.php(67): view('duenia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 00:50:13 --> Error: Class "App\Models\OrdenModel" not found
+[Method: GET, Route: duenia]
+in APPPATH\Controllers\DuenaController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 00:51:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "duena_panel.php"
+[Method: GET, Route: duenia]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('duena_panel.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('duena_panel', [], true)
+ 3 APPPATH\Controllers\DuenaController.php(82): view('duena_panel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 00:51:31 --> ErrorException: Undefined array key "usuario"
+[Method: GET, Route: duenia]
+in APPPATH\Views\duenia.php on line 196.
+ 1 APPPATH\Views\duenia.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "usuario"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php', 196)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('duenia', [], true)
+ 5 APPPATH\Controllers\DuenaController.php(82): view('duenia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-06 00:58:32 --> mysqli_sql_exception: Unknown table 'empresa_aurora.reportes' in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `reporte...', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reporte...')
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reporte...')
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `reporte...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projectWeb\app\Controllers\DuenaController.php(29): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+#8 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+#9 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-11-06 00:58:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'empresa_aurora.reportes'
+[Method: GET, Route: duenia]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DuenaController.php(29): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 00:58:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'empresa_aurora.reportes'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DuenaController.php(29): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 00:58:32 --> [Caused by] mysqli_sql_exception: Unknown table 'empresa_aurora.reportes'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `reportes`.*, `usuarios`.`nombre` AS `usuario`, `usuarios`.`rol` AS `rol`
+FROM `historial`
+LEFT JOIN `usuarios` ON `usuarios`.`id_usuario` = `reportes`.`id_usuario`
+ORDER BY `reportes`.`fecha` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DuenaController.php(29): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-06 02:13:27 --> ErrorException: Undefined variable $nombreDept
+[Method: GET, Route: duenia/departamento/tecnico]
+in APPPATH\Views\departamentos.php on line 7.
+ 1 APPPATH\Views\departamentos.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombreDept', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\departamentos.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\departamentos.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('departamentos', [], true)
+ 5 APPPATH\Controllers\DuenaController.php(149): view('departamentos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->verDepartamento('tecnico')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

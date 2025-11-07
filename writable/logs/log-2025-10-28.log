@@ -1,0 +1,803 @@
+CRITICAL - 2025-10-28 00:55:53 --> Error: Object of class CodeIgniter\Router\RouteCollection could not be converted to string
+[Method: GET, Route: gerente-general]
+in APPPATH\Config\Routes.php on line 25.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 00:57:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/usuarios.php"
+[Method: GET, Route: gerente-general/usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/usuarios.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/usuarios', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(20): view('gerente/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 00:58:07 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: gerente-general/usuarios]
+in APPPATH\Views\usuarios.php on line 72.
+ 1 APPPATH\Views\usuarios.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php', 72)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(20): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 00:59:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/usuarios.php"
+[Method: GET, Route: gerente-general/usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/usuarios.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/usuarios', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(20): view('gerente/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:05:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/usuarios.php"
+[Method: GET, Route: gerente-general/usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/usuarios.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/usuarios', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(20): view('gerente/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:06:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/usuarios.php"
+[Method: GET, Route: gerente-general/usuarios]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/usuarios.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/usuarios', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(20): view('gerente/usuarios', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:07:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/editar_usuario.php"
+[Method: GET, Route: gerente-general/usuarios/editar/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/editar_usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/editar_usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(51): view('gerente/editar_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:07:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/crear_usuario.php"
+[Method: GET, Route: gerente-general/usuarios/crear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/crear_usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/crear_usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(26): view('gerente/crear_usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:11:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/editar_usuario.php"
+[Method: GET, Route: gerente-general/usuarios/editar/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/editar_usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/editar_usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(51): view('gerente/editar_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:16:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/editar_usuario.php"
+[Method: GET, Route: gerente-general/usuarios/editar/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/editar_usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/editar_usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(51): view('gerente/editar_usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->editar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:21:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "gerente/crear_usuario.php"
+[Method: GET, Route: gerente-general/usuarios/crear]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('gerente/crear_usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerente/crear_usuario', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(26): view('gerente/crear_usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->crear()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:31:15 --> ErrorException: Undefined variable $i
+[Method: GET, Route: gerente-general/usuarios]
+in APPPATH\Views\usuarios.php on line 91.
+ 1 APPPATH\Views\usuarios.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(20): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 01:31:16 --> ErrorException: Undefined variable $i
+[Method: GET, Route: gerente-general/usuarios]
+in APPPATH\Views\usuarios.php on line 91.
+ 1 APPPATH\Views\usuarios.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(20): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-28 03:36:36 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projectWeb\app\Views\tecnicos.php(177): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projectWeb\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\projectWeb\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\projectWeb\system\Common.php(1173): CodeIgniter\View\View->render('tecnicos', Array, true)
+#10 C:\xampp\htdocs\projectWeb\app\Controllers\TecnicosController.php(27): view('tecnicos', Array)
+#11 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+#12 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+#13 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 {main}
+CRITICAL - 2025-10-28 03:36:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: tecnicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Views\tecnicos.php(177): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+ 8 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:36:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Views\tecnicos.php(177): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+10 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:36:36 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Views\tecnicos.php(177): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+11 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-28 03:37:02 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projectWeb\app\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projectWeb\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\projectWeb\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\projectWeb\system\Common.php(1173): CodeIgniter\View\View->render('tecnicos', Array, true)
+#10 C:\xampp\htdocs\projectWeb\app\Controllers\TecnicosController.php(27): view('tecnicos', Array)
+#11 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+#12 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+#13 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 {main}
+CRITICAL - 2025-10-28 03:37:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: tecnicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+ 8 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:37:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+10 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:37:02 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+11 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-28 03:37:07 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projectWeb\app\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projectWeb\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\projectWeb\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\projectWeb\system\Common.php(1173): CodeIgniter\View\View->render('tecnicos', Array, true)
+#10 C:\xampp\htdocs\projectWeb\app\Controllers\TecnicosController.php(27): view('tecnicos', Array)
+#11 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+#12 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+#13 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 {main}
+CRITICAL - 2025-10-28 03:37:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: tecnicos]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+ 8 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:37:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+10 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:37:07 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `historial`
+WHERE `id_usuario` = \'4\'
+ORDER BY `created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `historial`
+WHERE `id_usuario` = :id_usuario:
+ORDER BY `created_at` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Views\tecnicos.php(186): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\tecnicos.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos', [], true)
+11 APPPATH\Controllers\TecnicosController.php(27): view('tecnicos', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->index()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:43:35 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(9): view('jefeTaller')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:46:14 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:46:15 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:46:20 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:47:29 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:47:30 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:47:30 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:47:31 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 03:47:34 --> Error: Class "App\Models\CronogramasModel" not found
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 4 APPPATH\Controllers\JefeTallerController.php(34): view('jefeTaller', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 04:00:09 --> Error: Class "App\Models\SolicitudModel" not found
+[Method: GET, Route: jefe-ventas]
+in APPPATH\Controllers\JefeVentasController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeVentasController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeVentasController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 04:36:57 --> ErrorException: Undefined variable $vendedor
+[Method: GET, Route: vendedores]
+in APPPATH\Views\vendedor.php on line 36.
+ 1 APPPATH\Views\vendedor.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $vendedor', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\vendedor.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\vendedor.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('vendedor', [], true)
+ 5 APPPATH\Controllers\VendedorController.php(31): view('vendedor', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VendedorController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VendedorController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 05:05:35 --> Error: Class "App\Models\ReporteModel" not found
+[Method: GET, Route: gerente-general]
+in APPPATH\Controllers\GerenteGeneralController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\GerenteGeneralController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 05:12:23 --> ErrorException: Undefined variable $tecnicos
+[Method: GET, Route: gerente-general]
+in APPPATH\Views\gerenteGeneral.php on line 146.
+ 1 APPPATH\Views\gerenteGeneral.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tecnicos', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\gerenteGeneral.php', 146)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\gerenteGeneral.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('gerenteGeneral', [], true)
+ 5 APPPATH\Controllers\GerenteGeneralController.php(43): view('gerenteGeneral', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GerenteGeneralController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GerenteGeneralController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 18:28:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tecnicos_detalle.php"
+[Method: GET, Route: tecnicos/orden/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tecnicos_detalle.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos_detalle', [], true)
+ 3 APPPATH\Controllers\TecnicosController.php(138): view('tecnicos_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->orden('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 18:33:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tecnicos_detalle.php"
+[Method: GET, Route: tecnicos/orden/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tecnicos_detalle.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos_detalle', [], true)
+ 3 APPPATH\Controllers\TecnicosController.php(138): view('tecnicos_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->orden('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 18:33:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tecnicos_detalle.php"
+[Method: GET, Route: tecnicos/orden/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tecnicos_detalle.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos_detalle', [], true)
+ 3 APPPATH\Controllers\TecnicosController.php(138): view('tecnicos_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->orden('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 18:36:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tecnicos_detalle.php"
+[Method: GET, Route: tecnicos/orden/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tecnicos_detalle.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicos_detalle', [], true)
+ 3 APPPATH\Controllers\TecnicosController.php(138): view('tecnicos_detalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->orden('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 18:37:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tecnicosDetalle.php"
+[Method: GET, Route: tecnicos/orden/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tecnicosDetalle.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('tecnicosDetalle', [], true)
+ 3 APPPATH\Controllers\TecnicosController.php(138): view('tecnicosDetalle', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TecnicosController->orden('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TecnicosController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:36:56 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:19 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:22 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:24 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:26 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:30 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 19:37:36 --> ErrorException: Undefined array key "estado"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 181.
+ 1 APPPATH\Views\jefeTaller.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 181)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(39): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 20:03:51 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 108.
+ 1 APPPATH\Views\jefeTaller.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(26): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-28 20:14:09 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: jefe-taller]
+in APPPATH\Views\jefeTaller.php on line 108.
+ 1 APPPATH\Views\jefeTaller.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php', 108)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\jefeTaller.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('jefeTaller', [], true)
+ 5 APPPATH\Controllers\JefeTallerController.php(28): view('jefeTaller', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

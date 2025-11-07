@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(135deg, #ececec 70%, #ccc 30%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+section>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #082347;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 100%;
+    padding: 40px 30px;
+    color: #fff;
+    border: 3px solid #000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+section>form:hover {
+    outline: 3px solid #6c0c1a;
+    background-color: #e7ebda;
+    color: #000;
+}
+
+
+section>form>input {
+    border: 3px solid #ccc;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+section>form>input:hover {
+    background-color: #ccc;
+    border: 2px solid #000;
+}
+
+
+section>form>label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#btn1 {
+    width: 60%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #6c0c1a;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn1:hover {
+    background-color: grey;
+    color: #000;
+}
+
+h1,
+h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    section>form {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    #btn1 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+        background-color: #ececec;
+        padding: 10px;
+    }
+
+    section>form {
+        width: 100%;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    section>form>input {
+        width: 90%;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    #btn1 {
+        width: 80%;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    section>form {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #btn1 {
+        width: 90%;
+    }
+}

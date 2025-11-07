@@ -1,0 +1,263 @@
+/* ==============================
+   ESTILOS PRINCIPALES
+============================== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita desbordes laterales */
+  max-width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.sidebar {
+  background-color: #082347;
+  color: white;
+  width: 250px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar .sidebar-header {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav {
+  margin-top: 1rem;
+}
+
+.sidebar .nav-link {
+  color: #dcdcdc;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: #6c0c1a;
+  padding-left: 20px;
+}
+
+.sidebar .btn {
+  border-radius: 8px;
+}
+
+/* ==============================
+   BOTÓN HAMBURGUESA
+============================== */
+
+.toggle-sidebar {
+  display: none;
+  background: #6c0c1a;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+============================== */
+
+.main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ==============================
+   ELEMENTOS DE COLOR
+============================== */
+
+.text-accent {
+  color: #6c0c1a;
+}
+
+.btn-accent {
+  background-color: #6c0c1a;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-accent:hover {
+  background-color: #520914;
+}
+
+.table-header {
+  background-color: #082347;
+  color: white;
+}
+
+/* ==============================
+   TARJETAS Y SECCIONES
+============================== */
+
+.stat-card {
+  background-color: white;
+  border-left: 5px solid #6c0c1a;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.stat-card:hover {
+  transform: scale(1.03);
+}
+
+.dept-card {
+  background-color: white;
+  border-left: 5px solid #082347;
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.dept-card:hover {
+  transform: scale(1.05);
+}
+
+/* ==============================
+   TABLAS
+============================== */
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  min-width: 600px;
+}
+
+/* ==============================
+   MEDIA QUERIES
+============================== */
+
+/* --- Tablets (iPad Mini, etc.) --- */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .sidebar {
+    left: -250px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .toggle-sidebar {
+    display: inline-block;
+  }
+
+  .navbar h4 {
+    font-size: 1.1rem;
+  }
+
+  .navbar span {
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Móviles pequeños (iPhone, etc.) --- */
+@media (max-width: 576px) {
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    width: 210px;
+    left: -210px;
+    position: fixed;
+    height: 100%;
+    z-index: 1001;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .navbar h4 {
+    font-size: 1rem;
+  }
+
+  .navbar span {
+    font-size: 0.85rem;
+  }
+
+  .stat-card,
+  .dept-card {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .table {
+    min-width: 500px;
+  }
+
+  .table-responsive {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,129 @@
+CRITICAL - 2025-11-05 23:36:52 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: duenia]
+in APPPATH\Views\duenia.php on line 102.
+ 1 APPPATH\Views\duenia.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php', 102)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projectWeb\\app\\Views\\duenia.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('duenia', [], true)
+ 5 APPPATH\Controllers\DuenaController.php(67): view('duenia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DuenaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DuenaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-05 23:47:39 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cr...', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cr...')
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cr...')
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cr...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\projectWeb\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\projectWeb\app\Models\CronogramaModel.php(39): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\projectWeb\app\Controllers\JefeTallerController.php(116): App\Models\CronogramaModel->crearCronograma(Array)
+#9 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+#10 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+#11 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-11-05 23:47:39 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: POST, Route: jefe-taller/guardar_cronograma]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (:id_tecnico:, :id_orden:, :dia:, :observaciones:, :estado:, :fecha_asignacion:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\CronogramaModel.php(39): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\JefeTallerController.php(116): App\Models\CronogramaModel->crearCronograma([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-05 23:47:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (\'4\', \'4\', \'Lunes\', \'Hay que ir a hacer unas cosas.\', \'Programado\', \'2025-11-05\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (\'4\', \'4\', \'Lunes\', \'Hay que ir a hacer unas cosas.\', \'Programado\', \'2025-11-05\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (:id_tecnico:, :id_orden:, :dia:, :observaciones:, :estado:, :fecha_asignacion:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\CronogramaModel.php(39): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\JefeTallerController.php(116): App\Models\CronogramaModel->crearCronograma([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-05 23:47:39 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (\'4\', \'4\', \'Lunes\', \'Hay que ir a hacer unas cosas.\', \'Programado\', \'2025-11-05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (\'4\', \'4\', \'Lunes\', \'Hay que ir a hacer unas cosas.\', \'Programado\', \'2025-11-05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (\'4\', \'4\', \'Lunes\', \'Hay que ir a hacer unas cosas.\', \'Programado\', \'2025-11-05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cronogramas` (`id_tecnico`, `id_orden`, `dia`, `observaciones`, `estado`, `fecha_asignacion`) VALUES (:id_tecnico:, :id_orden:, :dia:, :observaciones:, :estado:, :fecha_asignacion:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\CronogramaModel.php(39): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\JefeTallerController.php(116): App\Models\CronogramaModel->crearCronograma([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-05 23:48:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'empresa_aurora', 3306, '', 0)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projectWeb\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projectWeb\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '4')
+#6 C:\xampp\htdocs\projectWeb\app\Controllers\JefeTallerController.php(101): CodeIgniter\BaseModel->find('4')
+#7 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+#8 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+#9 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projectWeb\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\projectWeb\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projectWeb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\projectWeb\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\projectWeb\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '4')
+#5 C:\xampp\htdocs\projectWeb\app\Controllers\JefeTallerController.php(101): CodeIgniter\BaseModel->find('4')
+#6 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+#7 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+#8 C:\xampp\htdocs\projectWeb\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projectWeb\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\projectWeb\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\projectWeb\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-11-05 23:48:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: jefe-taller/guardar_cronograma]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ordenes_servicio`
+WHERE `ordenes_servicio`.`id_orden` = :ordenes_servicio.id_orden:', [...], false)
+ 3 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '4')
+ 5 APPPATH\Controllers\JefeTallerController.php(101): CodeIgniter\BaseModel->find('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\JefeTallerController->guardar_cronograma()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JefeTallerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
