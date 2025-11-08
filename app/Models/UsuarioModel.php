@@ -12,10 +12,14 @@ class UsuarioModel extends Model
     // ✅ Verificar usuario al iniciar sesión
     public function verificarUsuario($usuario, $password)
     {
+        // Buscar usuario por nombre de usuario
         $user = $this->where('usuario', $usuario)->first();
+
+        // Verificar contraseña encriptada
         if ($user && password_verify($password, $user['password'])) {
             return $user;
         }
+
         return null;
     }
 
@@ -31,20 +35,20 @@ class UsuarioModel extends Model
         return $this->find($id);
     }
 
-    // ✅ Crear usuario
+    // ✅ Crear usuario con contraseña encriptada
     public function crearUsuario($data)
     {
         $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         return $this->insert($data);
     }
 
-    // ✅ Actualizar usuario
+    // ✅ Actualizar usuario (mantiene la contraseña si está vacía)
     public function actualizarUsuario($id, $data)
     {
         if (!empty($data['password'])) {
             $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         } else {
-            unset($data['password']); // no se modifica la contraseña si está vacía
+            unset($data['password']);
         }
         return $this->update($id, $data);
     }

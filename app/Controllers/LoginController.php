@@ -7,29 +7,50 @@ class LoginController extends BaseController
 {
     public function index(): string
     {
-        return view('login'); // Vista del login
+        // Si ya está logueado, redirigir al rol correspondiente
+        $session = session();
+        if ($session->get('logged_in')) {
+            return $this->redirigirPorRol($session->get('rol'));
+        }
+
+        return view('login');
     }
 
     public function autenticar()
-{
-    dd($this->request->getPost());
-    $session = session();
-    $usuarioModel = new UsuarioModel();
+    {
+        $session = session();
+        $usuarioModel = new UsuarioModel();
 
-    $usuario = $this->request->getPost('username');
-    $password = $this->request->getPost('password');
+        $usuario = trim($this->request->getPost('username'));
+        $password = trim($this->request->getPost('password'));
 
-    $userData = $usuarioModel->verificarUsuario($usuario, $password);
+        // Evita datos vacíos
+        if (empty($usuario) || empty($password)) {
+            return redirect()->back()->with('error', 'Por favor, completa todos los campos.');
+        }
 
-    if ($userData) {
-        $session->set([
-            'id_usuario' => $userData['id_usuario'],
-            'nombre'     => $userData['nombre'],
-            'rol'        => $userData['rol'],
-            'logged_in'  => true
-        ]);
+        $userData = $usuarioModel->verificarUsuario($usuario, $password);
 
-        switch ($userData['rol']) {
+        if ($userData) {
+            // Guardar datos en sesión
+            $session->set([
+                'id_usuario' => $userData['id_usuario'],
+                'nombre'     => $userData['nombre'],
+                'rol'        => $userData['rol'],
+                'logged_in'  => true
+            ]);
+
+            // Redirigir según el rol
+            return $this->redirigirPorRol($userData['rol']);
+        } else {
+            // Si el usuario o contraseña no son válidos
+            return redirect()->back()->with('error', 'Usuario o contraseña incorrectos');
+        }
+    }
+
+    private function redirigirPorRol($rol)
+    {
+        switch ($rol) {
             case 'duenia':
                 return redirect()->to('/duenia');
             case 'gerente':
@@ -45,10 +66,7 @@ class LoginController extends BaseController
             default:
                 return redirect()->to('/error-sesion');
         }
-    } else {
-        return redirect()->back()->with('error', 'Usuario o contraseña incorrectos');
     }
-}
 
     public function logout()
     {
