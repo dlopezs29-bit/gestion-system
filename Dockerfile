@@ -1,6 +1,11 @@
 FROM php:8.2-apache
 
-RUN docker-php-ext-install mysqli intl
+RUN apt-get update && apt-get install -y \
+    libicu-dev \
+    && docker-php-ext-install intl mysqli \
+    && docker-php-ext-enable intl mysqli \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN a2enmod rewrite
 
