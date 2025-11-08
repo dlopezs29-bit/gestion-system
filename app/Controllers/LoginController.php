@@ -12,6 +12,7 @@ class LoginController extends BaseController
 
     public function autenticar()
 {
+    dd($this->request->getPost());
     $session = session();
     $usuarioModel = new UsuarioModel();
 
